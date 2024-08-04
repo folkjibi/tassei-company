@@ -1,0 +1,266 @@
+/* banner design */
+.bannerSlide {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerSlide img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bannerSlide img:first-child {
+    display: block;
+}
+
+.bannerSlide img:not(:first-child) {
+    display: none;
+}
+
+/* tassei about design */
+.tassei-text {
+    padding: 30px;
+}
+
+.tassei-text h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.tassei-text p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* home-ways design */
+.ways-container {
+    width: 100%;
+    height: 300px;
+}
+
+.ways-banner {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../images/home/home-ways.png);
+    background-size: cover;
+    background-position: 69%;
+}
+
+.ways-text {
+    padding-top: 70px;
+    margin-left: auto;
+}
+
+.ways-text h2 {
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ways-text p {
+    font-weight: 500;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+}
+
+/* link contact design */
+.linkcon-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.linkcon-banner {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/home/linkcontact.png);
+    background-size: cover;
+    background-position: 69%;
+}
+
+.linkcon-text {
+    padding-top: 100px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.linkcon-text h2 {
+    font-weight: 400;
+}
+
+.linkcon-text p {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa343;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #d59e4d;
+    color: #fff;
+}
+
+/* responsive design */
+@media screen and (max-width: 1500px) {
+    .home-header {
+        min-height: 95vh;
+    }
+}
+
+@media screen and (max-width: 1405px) {
+    .home-header {
+        min-height: 85vh;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .home-header {
+        min-height: 75vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home-header {
+        min-height: 60vh;
+    }
+
+}
+
+/* @media screen and (min-width: 900px) {
+    .home-header {
+        min-height: 50vh;
+    }
+
+} */
+
+@media (max-width: 768px) {
+    .bannerSlide {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    /* home-ways design */
+    .ways-text h2 {
+        font-size: 25px;
+    }
+
+    .ways-text p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* home header design */
+    .home-header {
+        display: none;
+    }
+
+    /* tessei about design */
+    .tassei-text p {
+        text-align: -webkit-center;
+    }
+
+    /* home-ways design */
+    .ways-text {
+        padding-top: auto;
+        margin-left: auto;
+    }
+
+    .ways-text h2 {
+        font-size: 20px;
+    }
+
+    /* .ways-text p {
+        font-size: 18px;
+    } */
+
+    /* link contact design */
+    .linkcon-text {
+        margin-left: auto;
+    }
+
+    .linkcon-text p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    /* tassei about design */
+    .tassei-text h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tassei-text p {
+        font-size: 16px;
+    }
+
+    /* home-ways design */
+    .ways-text {
+        padding-top: 80px;
+    }
+
+    .ways-text h2 {
+        font-size: 18px;
+    }
+
+    /* promotion design */
+    .promotion-hot h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .ways-text h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* .home-header {
+        display: none;
+    } */
+
+    /* tassei about design */
+    .tassei-text p {
+        text-align: left;
+    }
+
+    /* home-ways design */
+    .ways-text {
+        padding-top: 90px;
+        margin-left: auto;
+    }
+
+    .ways-text h2 {
+        font-size: 13px;
+    }
+
+    .ways-text p {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,111 @@
+.news-section {
+    width: 100%;
+}
+
+.news-section .section-content {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.news-section .section-content .title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.news-section .section-content .title h2 {
+    font-size: 40px;
+    color: #000;
+    margin-top: 3rem;
+}
+
+.news-section .section-content .title p {
+    font-size: 18px;
+    color: #000;
+    margin-top: 3rem;
+}
+
+.news-section .section-content .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.news-section .section-content .cards .card {
+    width: 100%;
+    background: #f7f7f7;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.news-section .section-content .cards .card img {
+    width: 100%;
+    height: auto;
+}
+
+.news-section .section-content .cards .card .article {
+    padding: 15px 20px;
+}
+
+.news-section .section-content .cards .card .article h4 {
+    font-size: 24px;
+    color: #4a4a4a;
+}
+
+.news-section .section-content .cards .card .article p {
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #4a4a4a;
+}
+
+.news-section .section-content .cards .card a {
+    text-decoration: none;
+    display: inline-block;
+    background: #ffa343;
+    padding: 8px 15px;
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.news-section .section-content .cards .card a:hover {
+    color: #fff;
+    background: #000;
+}
+
+
+/* responsive design */
+/* @media screen and (max-width: 600px) {
+    .news-section .section-content .cards .card .article h4 {
+        text-align: center;
+    }
+
+    .news-section .section-content .cards .card .article p {
+        text-align: center;
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .news-section .section-content .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .news-section .section-content .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .news-section .section-content .cards .card .article h4 {
+        font-size: 20px;
+    }
+
+    .news-section .section-content .cards .card .article p {
+        font-size: 15px;
+        margin: 5px 0px;
+    }
+}

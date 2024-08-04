@@ -1,0 +1,41 @@
+/* menu text product design */
+.menu-products {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.container-menu-p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    color: #fff;
+    background-color: #ffa343;
+}
+
+.container-menu-p h2 {
+    text-align: center;
+}
+
+.text-left,
+.text-right {
+    width: 48%;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+}
+
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+    .container-menu-p h2 {
+        font-size: 19px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-products {
+        display: none;
+    }
+}
